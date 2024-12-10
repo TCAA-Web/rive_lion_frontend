@@ -5,5 +5,5 @@ export const socket = io(
   "https://rivelionbackend-production.up.railway.app:3000"
 );
 export const ioSocket = socket.connect(
-  "https://rivelionbackend-production.up.railway.app/:3000"
+  "https://rivelionbackend-production.up.railway.app:3000"
 );
