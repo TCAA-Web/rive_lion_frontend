@@ -6,7 +6,7 @@ const btn = document.getElementById("feedButton");
 export const feed = () => {
   isEating.fire();
   console.log("isEating", isEating);
-  ioSocket.emit("feed", isEating);
+  ioSocket.emit("feed");
 };
 
 // Bind input to button in HTML
