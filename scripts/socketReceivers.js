@@ -10,7 +10,9 @@ ioSocket.on("status", (data) => {
   isSad.value = data.isSad;
 });
 
-// Fires animation when client receives a feed update from server
-ioSocket.on("feed", () => {
+// Fires animation and updates rive values when client receives a feed update from server
+ioSocket.on("feed", (data) => {
   isEating.fire();
+  healthValue.value = data.hunger;
+  isSad.value = data.isSad;
 });
