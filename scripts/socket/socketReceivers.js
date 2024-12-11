@@ -24,6 +24,7 @@ ioSocket.on("status", (data) => {
 // Fires animation and updates rive values when client receives a feed update from server
 ioSocket.on("feed", (data) => {
   isEating.fire();
+  riveInstance.setTextRunValue("hp_text", `HP: ${data.hunger}%`);
   healthValue.value = data.hunger;
   isSad.value = data.isSad;
 });
