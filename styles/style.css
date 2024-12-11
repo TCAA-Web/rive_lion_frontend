@@ -30,6 +30,7 @@ body {
     justify-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
   }
 
   button {
@@ -40,6 +41,9 @@ body {
     background-color: #333;
     cursor: pointer;
     margin: 16px;
+    position: absolute;
+
+    border-radius: 8px;
   }
   button:hover {
     color: #333;
@@ -51,7 +55,6 @@ body {
   }
 
   canvas {
-    margin-top: 5vh;
-    width: 100%;
-
+    width: 100vw;
+    height: 100vh;
   }
