@@ -28,6 +28,7 @@ let riveInstance = new rive.Rive({
 
     // Set default input values
     health.value = initial_hungerLevel;
+    riveInstance.setTextRunValue("hp_text", `HP: ${health.value}%`);
   },
 });
 

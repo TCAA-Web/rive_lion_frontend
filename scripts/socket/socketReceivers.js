@@ -16,7 +16,7 @@ ioSocket.on("status", (data) => {
   console.log("Health", healthValue);
   console.log("Mood is sad", isSad);
   console.log("incoming data", data);
-  riveInstance.setTextRunValue("hp_text", `HP: ${healthValue}%`);
+  riveInstance.setTextRunValue("hp_text", `HP: ${data.hunger}%`);
   healthValue.value = data.hunger;
   isSad.value = data.isSad;
 });
